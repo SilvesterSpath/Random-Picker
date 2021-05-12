@@ -36,8 +36,8 @@ function randomSelect() {
   const interval = setInterval(() => {
     //const randomNum = getRandomNum();
     const randomTag = getRandomTag();
+    console.log(randomTag);
     if (!randomTag) {
-      /* alert('There is no text'); */
       location.reload();
     } else {
       highlightTag(randomTag);
