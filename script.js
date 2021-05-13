@@ -31,6 +31,16 @@ function createTags(input) {
   });
 }
 
+function createDefaultTags() {
+  const defaultText = ['Choice 1', 'Choice 2', 'Choice 3'];
+  defaultText.forEach((i) => {
+    const tag = document.createElement('span');
+    tag.classList.add('tag');
+    tag.innerText = i;
+    tags.appendChild(tag);
+  });
+}
+
 function randomSelect() {
   const times = 20;
   const interval = setInterval(() => {
@@ -38,7 +48,7 @@ function randomSelect() {
     const randomTag = getRandomTag();
     console.log(randomTag);
     if (!randomTag) {
-      location.reload();
+      createDefaultTags();
     } else {
       highlightTag(randomTag);
       setTimeout(() => {
@@ -52,7 +62,7 @@ function randomSelect() {
     setTimeout(() => {
       const randomTag = getRandomTag();
       if (!randomTag) {
-        location.reload();
+        createDefaultTags();
       } else {
         highlightTag(randomTag);
       }
