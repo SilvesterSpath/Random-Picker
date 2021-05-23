@@ -46,7 +46,6 @@ function randomSelect() {
   const interval = setInterval(() => {
     //const randomNum = getRandomNum();
     const randomTag = getRandomTag();
-    console.log(randomTag);
     if (!randomTag) {
       createDefaultTags();
     } else {

@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #2b88f0;
+  background-color: #087275;
   font-family: 'Muli', sans-serif;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ textarea {
 }
 
 .tag {
-  background-color: #f0932b;
+  background-color: #d68812;
   color: white;
   border-radius: 50px;
   padding: 10px 20px;
